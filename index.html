@@ -55,7 +55,7 @@
        googleFormEmbedUrl: Google Forms iframe URL ending in /viewform?embedded=true
        contactEmail: a valid email address; whatsappNumber: country code + digits only
        canonicalUrl: final absolute website URL; socialShareImage: absolute image URL */
-    const SAATPAKE_CONFIG={googleFormEmbedUrl:"https://docs.google.com/forms/d/e/1FAIpQLSevyA4AVp3uUTkFRqAiycpp5tA3BKvMyM1q2xi1-G1XRbbPZA/viewform?embedded=true",contactEmail:"PASTE_CONTACT_EMAIL_HERE",whatsappNumber:"PASTE_WHATSAPP_NUMBER_HERE",canonicalUrl:"https://myragifts.github.io/SaatPake/",socialShareImage:"PASTE_SOCIAL_SHARE_IMAGE_URL_HERE"};
+    const SAATPAKE_CONFIG={googleFormEmbedUrl:"https://docs.google.com/forms/d/e/1FAIpQLScfl75IxiPv9xfr0cwAJIxkbAILeFgKmNt03D6R31Mt4ke1JA/viewform?embedded=true",contactEmail:"PASTE_CONTACT_EMAIL_HERE",whatsappNumber:"PASTE_WHATSAPP_NUMBER_HERE",canonicalUrl:"https://myragifts.github.io/SaatPake/",socialShareImage:"PASTE_SOCIAL_SHARE_IMAGE_URL_HERE"};
     const icon=(path)=>`<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"/></svg>`;
     const trust=["Easy Profile Creation","Manual Profile Review","Suitable Match Sharing","Privacy-Focused"];
     document.querySelector("#trust-items").innerHTML=trust.map((t,i)=>`<div class="trust-item">${icon(i===0?"M5 12h14M12 5v14":i===1?"M12 3 4 7v5c0 5 3.4 8.2 8 9 4.6-.8 8-4 8-9V7l-8-4Z":i===2?"M8 12h8M13 7l5 5-5 5":"M12 21S3 16 3 8.7C3 4.6 8.3 2.8 12 7c3.7-4.2 9-2.4 9 1.7C21 16 12 21 12 21Z") }<span>${t}</span></div>`).join("");
